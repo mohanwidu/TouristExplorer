@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+*****************
+
+# Tourlist component - Shows the different cities to explore; Get the Cities data on Init of this component and data manipulated to pass it to child component. GET request to JSON server TouristDB.
+# Placeslist component - Shows the different places to explore in the seected city. Made as Parent-Child component interaction between these two. @Input used.
+# GoogleMapsAPI used to show the location of City chosen.
+
+*****************

@@ -1,0 +1,56 @@
+<div class="container">
+<div class="row">
+	<div class="col-sm-3">
+		<div class="card width20">
+		  <img class="card-img-top" src="../../assets/images/pondichery.jpeg" alt="Card image cap">
+		  <div class="card-body">
+		    <h4 class="card-title">PONDICHERY</h4>
+		    <p class="card-text">Nice place to visit and spend some time with dearest ones in precious way.</p>
+		    <button class="btn btn-primary" (click)="showPlaces(1)">Places to Visit</button>
+		  </div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card width20">
+		  <img class="card-img-top" src="../../assets/images/munnar.jpeg" alt="Card image cap">
+		  <div class="card-body">
+		    <h4 class="card-title">MUNNAR</h4>
+		    <p class="card-text">Nice place to visit and spend some time with dearest ones in precious way.</p>
+				<button class="btn btn-primary" (click)="showPlaces(2)">Places to Visit</button>
+		  </div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card width20">
+		  <img class="card-img-top" src="../../assets/images/kodaikanal.jpeg" alt="Card image cap">
+		  <div class="card-body">
+		    <h4 class="card-title">KODAIKANAL</h4>
+		    <p class="card-text">Nice place to visit and spend some time with dearest ones in precious way.</p>
+		    <button class="btn btn-primary" (click)="showPlaces(3)">Places to Visit</button>
+		  </div>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<div class="card width20">
+		  <img class="card-img-top" src="../../assets/images/yercaud.jpeg" alt="Card image cap">
+		  <div class="card-body">
+		    <h4 class="card-title">YERCAUD</h4>
+		    <p class="card-text">Nice place to visit and spend some time with dearest ones in precious way.</p>
+		    <button class="btn btn-primary" (click)="showPlaces(4)">Places to Visit</button>
+		  </div>
+		</div>
+	</div>
+</div>
+
+<br>
+
+<!-- **** Child Component **** 
+Showhideplaces - togglable switch for places to visit button;
+Listplaces - Array of PlacesToVist of selected city -->
+
+<div>
+	<app-placeslist [showhidePlaces]="showhideChild" [listPlaces]="citySpecificPlaces" [cityNum]="cityid"></app-placeslist>
+</div>
+
+</div>
+	

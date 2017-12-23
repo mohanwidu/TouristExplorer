@@ -28,10 +28,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 *****************
 
-Tourlist component - Shows the different cities to explore; Get the Cities data on Init of this component and data manipulated to pass it to child component. GET request to JSON server TouristDB.
+#Tourlist component 
+Shows the different cities to explore; Get the Cities data on Init of this component and data manipulated to pass it to child component. GET request to JSON server TouristDB.
 
-Placeslist component - Shows the different places to explore in the seected city. Made as Parent-Child component interaction between these two. @Input used.
+#Placeslist component 
+ Shows the different places to explore in the seected city. Made as Parent-Child component interaction between these two. @Input used.
+ Book button helps to book the hotel. Button will turn Full on booking. PUT request to JSON server TouristDB
 
-GoogleMapsAPI used to show the location of City chosen.
+#GoogleMapsAPI 
+used to show the location of City chosen. Locate button clicks lead to the map.
 
 *****************

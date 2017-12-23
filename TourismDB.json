@@ -1,38 +1,88 @@
-{"Tours": [
-  {
-    "id" : 1,
-    "cityname" : "Pondichery",
-    "PlacesToVisit" : [
-      {"place": "PPlace1", "hotel": "PHotel1", "booked": "false"},
-      {"place": "PPlace2", "hotel": "PHotel2", "booked": "false"},
-      {"place": "PPlace3", "hotel": "PHotel3", "booked": "false"}
-      ]
-},
 {
-  "id" : 2,
-  "cityname" : "Munnar",
-    "PlacesToVisit" : [
-      {"place": "MPlace1", "hotel": "MHotel1", "booked": "false"},
-      {"place": "MPlace2", "hotel": "MHotel2", "booked": "false"},
-      {"place": "MPlace3", "hotel": "MHotel3", "booked": "false"}
+  "Tours": [
+    {
+      "id": 1,
+      "cityname": "Pondichery",
+      "PlacesToVisit": [
+        {
+          "place": "PPlace1",
+          "hotel": "PHotel1",
+          "booked": false
+        },
+        {
+          "place": "PPlace2",
+          "hotel": "PHotel2",
+          "booked": false
+        },
+        {
+          "place": "PPlace3",
+          "hotel": "PHotel3",
+          "booked": true
+        }
       ]
-},
-{
-  "id" : 3,
-  "cityname" : "Kodaikanal",
-    "PlacesToVisit" : [
-      {"place": "KPlace1", "hotel": "KHotel1", "booked": "false"},
-      {"place": "KPlace2", "hotel": "KHotel2", "booked": "false"},
-      {"place": "KPlace3", "hotel": "KHotel3", "booked": "false"}
+    },
+    {
+      "id": 2,
+      "cityname": "Munnar",
+      "PlacesToVisit": [
+        {
+          "place": "MPlace1",
+          "hotel": "MHotel1",
+          "booked": false
+        },
+        {
+          "place": "MPlace2",
+          "hotel": "MHotel2",
+          "booked": true
+        },
+        {
+          "place": "MPlace3",
+          "hotel": "MHotel3",
+          "booked": false
+        }
       ]
-},
-{
-  "id" : 4,
-  "cityname" : "Yercaud",
-    "PlacesToVisit" : [
-      {"place": "YPlace1", "hotel": "YHotel1", "booked": "false"},
-      {"place": "YPlace2", "hotel": "YHotel2", "booked": "false"},
-      {"place": "YPlace3", "hotel": "YHotel3", "booked": "false"}
+    },
+    {
+      "id": 3,
+      "cityname": "Kodaikanal",
+      "PlacesToVisit": [
+        {
+          "place": "KPlace1",
+          "hotel": "KHotel1",
+          "booked": true
+        },
+        {
+          "place": "KPlace2",
+          "hotel": "KHotel2",
+          "booked": false
+        },
+        {
+          "place": "KPlace3",
+          "hotel": "KHotel3",
+          "booked": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "cityname": "Yercaud",
+      "PlacesToVisit": [
+        {
+          "place": "YPlace1",
+          "hotel": "YHotel1",
+          "booked": false
+        },
+        {
+          "place": "YPlace2",
+          "hotel": "YHotel2",
+          "booked": false
+        },
+        {
+          "place": "YPlace3",
+          "hotel": "YHotel3",
+          "booked": true
+        }
       ]
     }
-]}
+  ]
+}

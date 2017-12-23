@@ -42,6 +42,7 @@ export class TourcitieslistComponent implements OnInit {
     this.cityid = cityid;  
     this.citySpecificPlaces = this.listTour[this.cityid - 1].PlacesToVisit;
     console.log(this.citySpecificPlaces);
+    // console.log(typeof(this.citySpecificPlaces[0].booked));
   
   }
 }

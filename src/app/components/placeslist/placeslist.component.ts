@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
+import { TourService } from '../../services/tour.service';
 
 declare const google: any;
 
@@ -14,8 +15,9 @@ export class PlaceslistComponent implements OnInit {
   @Input() showhidePlaces: Boolean;
   @Input() listPlaces: any[];
   @Input() cityNum: any;
+  @Input() listCities: any[];
 
-  constructor() { 
+  constructor(private tour: TourService) { 
   }
 
   ngOnInit() {
@@ -27,6 +29,7 @@ export class PlaceslistComponent implements OnInit {
 
   }
 
+  // invoked when Locate button clicked
   showMap() {
     let x,y : any;
 
@@ -63,6 +66,17 @@ export class PlaceslistComponent implements OnInit {
       map: map
     })
   }
+
+//Invoked when Book button clicked.
+bookHotel(i) {
+
+  // Manipulate the City's Hotel iteration for booking flag;
+  this.listCities[this.cityNum - 1].PlacesToVisit[i].booked = true;
+
+  //Pass updated JSON to the PUT service; Will get an alert on successful update;
+  this.tour.putCityTour(this.cityNum, this.listCities[this.cityNum - 1]).subscribe(()=> alert("Hotel booked. Congrats!"));
+
+}
 
 
 }
